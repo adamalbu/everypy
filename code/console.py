@@ -1,4 +1,11 @@
+import json
 
+# read file
+with open('cd.json', 'r') as myfile:
+    data=myfile.read()
+
+# parse file
+obj = json.loads(data)
 
 print('Hi.')
 print('Welcome to everypy where you can do lots of things.')
